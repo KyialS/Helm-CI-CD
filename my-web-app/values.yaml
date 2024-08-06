@@ -1,0 +1,16 @@
+replicaCount: 3
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  tag: "new-version"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+
+resources: {}
+
